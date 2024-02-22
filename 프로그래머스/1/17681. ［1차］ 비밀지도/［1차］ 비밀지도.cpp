@@ -26,9 +26,6 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
     // 2개의 정수 배열
     // #이 둘중에 하나라도 있으면 막힌거 공백은 두개 다 공백이여야 함.
     
-    // 일단 이진 변환 부터 해야함.
-    int a[17][17];
-    int b[17][17];
     string arr_a[17];
     string arr_b[17];
     string str;
@@ -39,14 +36,9 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
         arr_a[i] =binary_(arr1[i],n);
         arr_b[i] =binary_(arr2[i],n); 
 
-        for(int j=0;j<n;j++)
-        {
-            if(arr_a[i][j]=='1'|| arr_b[i][j]=='1') 
-            {
-                str+='#';
-            }
-            else str+=' ';
-        }        
+        for(int j=0;j<n;j++)       
+            str+= arr_a[i][j]=='1'|| arr_b[i][j]=='1' ?'#':' ';
+                
         ans.push_back(str);
         str.clear();
     }
