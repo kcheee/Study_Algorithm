@@ -1,10 +1,10 @@
 # [level 1] [PCCP 기출문제] 1번 / 붕대 감기 - 250137 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/250137) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/250137?language=python3) 
 
 ### 성능 요약
 
-메모리: 4.21 MB, 시간: 0.01 ms
+메모리: 10.4 MB, 시간: 0.46 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 06일 18:57:24
+2025년 02월 18일 15:23:11
 
 ### 문제 설명
 
@@ -24,13 +24,13 @@
 
 <p><code>붕대 감기</code>는 <code>t</code>초 동안 붕대를 감으면서 1초마다 <code>x</code>만큼의 체력을 회복합니다. <code>t</code>초 연속으로 붕대를 감는 데 성공한다면 <code>y</code>만큼의 체력을 추가로 회복합니다. 게임 캐릭터에는 최대 체력이 존재해 현재 체력이 최대 체력보다 커지는 것은 불가능합니다.</p>
 
-<p data-sider-select-id="46debdcb-7f9b-484b-8e8a-532627c33ee3">기술을 쓰는 도중 몬스터에게 공격을 당하면 기술이 취소되고, 공격을 당하는 순간에는 체력을 회복할 수 없습니다. 몬스터에게 공격당해 기술이 취소당하거나 기술이 끝나면 그 즉시 <code>붕대 감기</code>를 다시 사용하며, 연속 성공 시간이 0으로 초기화됩니다.</p>
+<p>기술을 쓰는 도중 몬스터에게 공격을 당하면 기술이 취소되고, 공격을 당하는 순간에는 체력을 회복할 수 없습니다. 몬스터에게 공격당해 기술이 취소당하거나 기술이 끝나면 그 즉시 <code>붕대 감기</code>를 다시 사용하며, 연속 성공 시간이 0으로 초기화됩니다.</p>
 
 <p>몬스터의 공격을 받으면 정해진 피해량만큼 현재 체력이 줄어듭니다. 이때, 현재 체력이 0 이하가 되면 캐릭터가 죽으며 더 이상 체력을 회복할 수 없습니다.</p>
 
 <p>당신은 <code>붕대감기</code> 기술의 정보, 캐릭터가 가진 최대 체력과 몬스터의 공격 패턴이 주어질 때 캐릭터가 끝까지 생존할 수 있는지 궁금합니다.</p>
 
-<p><code data-sider-select-id="f37ce766-84dc-4e4f-86f9-2ddd846745a4">붕대 감기</code> 기술의 시전 시간, 1초당 회복량, 추가 회복량을 담은 1차원 정수 배열 <code>bandage</code>와 최대 체력을 의미하는 정수 <code>health</code>, 몬스터의 공격 시간과 피해량을 담은 2차원 정수 배열 <code>attacks</code>가 매개변수로 주어집니다. 모든 공격이 끝난 직후 남은 체력을 return 하도록 solution 함수를 완성해 주세요. <strong>만약 몬스터의 공격을 받고 캐릭터의 체력이 0 이하가 되어 죽는다면 -1을 return 해주세요.</strong></p>
+<p><code>붕대 감기</code> 기술의 시전 시간, 1초당 회복량, 추가 회복량을 담은 1차원 정수 배열 <code>bandage</code>와 최대 체력을 의미하는 정수 <code>health</code>, 몬스터의 공격 시간과 피해량을 담은 2차원 정수 배열 <code>attacks</code>가 매개변수로 주어집니다. 모든 공격이 끝난 직후 남은 체력을 return 하도록 solution 함수를 완성해 주세요. <strong>만약 몬스터의 공격을 받고 캐릭터의 체력이 0 이하가 되어 죽는다면 -1을 return 해주세요.</strong></p>
 
 <hr>
 
@@ -50,7 +50,7 @@
 <ul>
 <li><code>attacks[i]</code>는 [<code>공격 시간</code>, <code>피해량</code>] 형태의 길이가 2인 정수 배열입니다.</li>
 <li><code>attacks</code>는 <code>공격 시간</code>을 기준으로 오름차순 정렬된 상태입니다.</li>
-<li><code data-sider-select-id="18ff1733-ebb0-449e-9a82-bd231463e957">attacks</code>의 <code>공격 시간</code>은 모두 다릅니다.</li>
+<li><code>attacks</code>의 <code>공격 시간</code>은 모두 다릅니다.</li>
 <li>1 ≤ <code>공격 시간</code> ≤ 1,000</li>
 <li>1 ≤ <code>피해량</code> ≤ 100</li>
 </ul></li>
